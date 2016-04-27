@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+
+  <title>loldamagecalculator Project</title>
+
+
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+  <link rel='stylesheet' href='loldamagecalculator/assets/css/styles.css'>
+
+</head>
+
+<body>
+	<h1>loldamagecalculator Project</h1>
+	<div class='main-container'>
+		<div class='main-image-div'>
+			<div class="hp-num-div">
+				<span class='hp-num-span' id='num-span'>700/700 hp - 15 armor - 0 mr</span>
+			</div>
+			<div class="hp-div">
+				<div class='main-image-hp'></div>
+			</div>
+			<div class="percents-div">
+				<span class='percents' id='percents'>%13 reduced physical - 0% reduced magic</span>
+			</div>
+			<div class='main-image' style="background:url('loldamagecalculator/assets/images/siegecreep.jpg')"></div>
+		</div>
+		<div class='reset-hp-div'>
+			<input type="button" id="reset-hp" value='Reset hp'></input>
+		</div>
+		<div class='timeslider-div'>
+			<div id='timeslider'></div>
+		</div>	
+		<div class='time-div'>
+			<span id='time-span'><strong>1:15</strong></span>
+		</div>
+		<div class='auto-attack-div'>
+			<input type="button" id='auto-attack' value='AUTO!'></input>
+			<input type="text" id='attack-damage' value=100></input>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script src='loldamagecalculator/assets/js/script.js'></script>
+</body>
+</html>

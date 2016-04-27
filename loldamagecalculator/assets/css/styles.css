@@ -1,0 +1,86 @@
+.main-container{
+	width: 100%;
+	height: 550px;
+}
+.timeslider-div{
+	margin-top: 10px;
+	width: 50%;
+	margin-left: 25%;
+	border: 1px solid #aaaaaa; 
+    background: #ffffff 50% 50% repeat-x;
+    border-radius: 15px;
+    height: 15px;
+    padding-right: 16px;
+    padding-left: 1px;
+}
+.main-image-div{
+	padding-top: 35px;
+}
+.hp-div{
+	width: 300px;
+    height: 10px;
+	background-color: red;
+	margin: 0 auto;
+	margin-bottom: 15px;
+}
+.hp-num-div{
+	margin: 0 auto;
+	width: 30%;
+}
+.hp-num-span{
+	margin-left: 25%;
+}
+.percents-div{
+	margin: 0 auto;
+	width: 30%;
+}
+#percents{
+	margin-left: 45px;
+}
+.main-image-hp{
+	width: 300px;
+	background-color: green;
+	height: 10px;
+}
+.main-image{
+	margin: 0 auto;
+	height: 221px;
+	width: 228px;
+}
+.auto-attack-div{
+	width: 10%;
+	margin: 0 auto;
+}
+#auto-attack{
+	width: 100%;
+}
+#timeslider.ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all{
+	height: .4em;
+	border: none;
+	background: none;
+}
+#timeslider.ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all .ui-slider-handle{
+	top: .1em;
+}
+.ui-slider-handle.ui-state-default.ui-corner-all{
+	height: .6em;
+	width: .6em;
+	margin-left: 0;
+	border-radius: 9px
+}
+.time-div{
+	width: 10%;
+	margin: 0 auto;
+}
+.reset-hp-div{
+	width: 10%;
+	margin: 0 auto;
+}
+#reset-hp{
+	margin-left: 30px;
+}
+#time-span{
+	font-size: 15px;
+	margin: 0 auto;
+	margin-left: 45px;
+}
