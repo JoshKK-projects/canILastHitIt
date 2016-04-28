@@ -1,6 +1,21 @@
 .main-container{
-	width: 100%;
+	width: 60%;
 	height: 550px;
+	float: left;
+}
+.champion-search{
+	border-style: solid;
+	border-width: 1px;
+	width: 80%;
+	height: 25px;
+	margin-bottom: 5px;
+}
+.abilties{
+	margin-left: 50%;
+}
+.ability{
+	margin-left: 17%;
+	margin-top: 15px;
 }
 .timeslider-div{
 	margin-top: 10px;
@@ -11,10 +26,42 @@
     border-radius: 15px;
     height: 15px;
     padding-right: 16px;
+}
+.level-slider-div{
+	border: 1px solid #aaaaaa; 
+    background: #ffffff 50% 50% repeat-x;
+    border-radius: 15px;
+    width: 50%;
+    margin-left: 50%;
+    padding-right: 8px;
     padding-left: 1px;
+}
+#level-span{
+	margin-left: 50%;
+}
+#level-slider .ui-slider-handle.ui-state-default.ui-corner-all{
+	height: .3em;
+	width: .3em;
+	top: .02em;
 }
 .main-image-div{
 	padding-top: 35px;
+}
+.selected-champion-div{
+	float: left;		
+	width: 20%;
+}
+.selected-champion{
+	margin-left: 50%;
+	margin-top: 15%;
+}
+.champion-div{
+	float: left;
+	height: 100%;
+	width: 20%;
+	overflow-y:auto;
+	height: 400px;
+	cursor: pointer;
 }
 .hp-div{
 	width: 300px;
@@ -25,17 +72,17 @@
 }
 .hp-num-div{
 	margin: 0 auto;
-	width: 30%;
+	width: 50%;
 }
 .hp-num-span{
 	margin-left: 25%;
 }
 .percents-div{
 	margin: 0 auto;
-	width: 30%;
+	width: 100%;
 }
 #percents{
-	margin-left: 45px;
+	margin-left: 30%;
 }
 .main-image-hp{
 	width: 300px;
@@ -68,6 +115,11 @@
 	margin-left: 0;
 	border-radius: 9px
 }
+#level-slider.ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all{
+	height: .4em;
+	border: none;
+	background: none;
+}
 .time-div{
 	width: 10%;
 	margin: 0 auto;
@@ -83,4 +135,11 @@
 	font-size: 15px;
 	margin: 0 auto;
 	margin-left: 45px;
+}
+.champ-icon{
+	width: 40px;
+}
+.level-slider-span{
+	width: 50px;
+	float: left;
 }

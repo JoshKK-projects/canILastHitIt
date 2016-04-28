@@ -8,12 +8,56 @@
 
 
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.2/css/select2.min.css" rel="stylesheet" />
   <link rel='stylesheet' href='loldamagecalculator/assets/css/styles.css'>
+
 
 </head>
 
 <body>
-	<h1>loldamagecalculator Project</h1>
+	<div class='selected-champion-div'>
+		<img class='selected-champion' src='http://ddragon.leagueoflegends.com/cdn/6.8.1/img/champion/Aatrox.png'>
+		<div class='level-slider-div'>
+			<div id='level-slider'></div>
+		</div>
+		<span id='level-span'><strong>Level 1</strong></span>
+		<div class='abilties'>
+			<div class='ability-1'>
+				<img class='Q ability' src='http://ddragon.leagueoflegends.com/cdn/6.8.1/img/spell/AatroxQ.png'>
+				<form action="" class='Q ability-levels'>
+					<input name='Qability' class='ability-rank' type='radio' value=1> 
+					<input name='Qability' class='ability-rank' type='radio' value=2>
+					<input name='Qability' class='ability-rank' type='radio' value=3>
+					<input name='Qability' class='ability-rank' type='radio' value=4>
+					<input name='Qability' class='ability-rank' type='radio' value=5>
+				</form>
+				<img class='W ability' src='http://ddragon.leagueoflegends.com/cdn/6.8.1/img/spell/AatroxW.png'>
+				<form action="" class='W ability-levels'>
+					<input name='Wability' class='ability-rank' type='radio' value=1> 
+					<input name='Wability' class='ability-rank' type='radio' value=2>
+					<input name='Wability' class='ability-rank' type='radio' value=3>
+					<input name='Wability' class='ability-rank' type='radio' value=4>
+					<input name='Wability' class='ability-rank' type='radio' value=5>
+				</form>
+				<img class='E ability' src='http://ddragon.leagueoflegends.com/cdn/6.8.1/img/spell/AatroxE.png'>
+				<form action="" class='E ability-levels'>
+					<input name='Eability' class='ability-rank' type='radio' value=1> 
+					<input name='Eability' class='ability-rank' type='radio' value=2>
+					<input name='Eability' class='ability-rank' type='radio' value=3>
+					<input name='Eability' class='ability-rank' type='radio' value=4>
+					<input name='Eability' class='ability-rank' type='radio' value=5>
+				</form>
+				<img class='R ability' src='http://ddragon.leagueoflegends.com/cdn/6.8.1/img/spell/AatroxR.png'>
+				<form action="" class='R ability-levels'>
+					<input name='Rability' class='ability-rank' type='radio' value=1> 
+					<input name='Rability' class='ability-rank' type='radio' value=2>
+					<input name='Rability' class='ability-rank' type='radio' value=3>
+					<input name='Rability' class='ability-rank' type='radio' value=4>
+					<input name='Rability' class='ability-rank' type='radio' value=5>
+				</form>
+			</div>
+		</div>
+	</div>
 	<div class='main-container'>
 		<div class='main-image-div'>
 			<div class="hp-num-div">
@@ -38,11 +82,18 @@
 		</div>
 		<div class='auto-attack-div'>
 			<input type="button" id='auto-attack' value='AUTO!'></input>
-			<input type="text" id='attack-damage' value=100></input>
+			<input type="text" id='attack-damage' value=60></input>
 		</div>
+	</div>
+	<div class="champion-div">
+		<input list="champion-data-list" placeholder=' Search Champions' class="champion-search">
+		<datalist id="champion-data-list"></datalist>
+	<br/>
+		<!-- js filled -->
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-  <script src='loldamagecalculator/assets/js/script.js'></script>
+  	<script src='loldamagecalculator/assets/js/creepmanager.js'></script>
+    <script src='loldamagecalculator/assets/js/championdata.js'></script>
 </body>
 </html>
