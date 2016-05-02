@@ -15,48 +15,8 @@
 </head>
 
 <body>
-	<div class='selected-champion-div'>
-		<img class='selected-champion' src='http://ddragon.leagueoflegends.com/cdn/6.8.1/img/champion/Aatrox.png'>
-		<div class='level-slider-div'>
-			<div id='level-slider'></div>
-		</div>
-		<span id='level-span'><strong>Level 1</strong></span>
-		<div class='abilties'>
-			<div class='ability-1'>
-				<img class='Q ability' src='http://ddragon.leagueoflegends.com/cdn/6.8.1/img/spell/AatroxQ.png'>
-				<form action="" class='Q ability-levels'>
-					<input name='Qability' class='ability-rank' type='radio' value=1> 
-					<input name='Qability' class='ability-rank' type='radio' value=2>
-					<input name='Qability' class='ability-rank' type='radio' value=3>
-					<input name='Qability' class='ability-rank' type='radio' value=4>
-					<input name='Qability' class='ability-rank' type='radio' value=5>
-				</form>
-				<img class='W ability' src='http://ddragon.leagueoflegends.com/cdn/6.8.1/img/spell/AatroxW.png'>
-				<form action="" class='W ability-levels'>
-					<input name='Wability' class='ability-rank' type='radio' value=1> 
-					<input name='Wability' class='ability-rank' type='radio' value=2>
-					<input name='Wability' class='ability-rank' type='radio' value=3>
-					<input name='Wability' class='ability-rank' type='radio' value=4>
-					<input name='Wability' class='ability-rank' type='radio' value=5>
-				</form>
-				<img class='E ability' src='http://ddragon.leagueoflegends.com/cdn/6.8.1/img/spell/AatroxE.png'>
-				<form action="" class='E ability-levels'>
-					<input name='Eability' class='ability-rank' type='radio' value=1> 
-					<input name='Eability' class='ability-rank' type='radio' value=2>
-					<input name='Eability' class='ability-rank' type='radio' value=3>
-					<input name='Eability' class='ability-rank' type='radio' value=4>
-					<input name='Eability' class='ability-rank' type='radio' value=5>
-				</form>
-				<img class='R ability' src='http://ddragon.leagueoflegends.com/cdn/6.8.1/img/spell/AatroxR.png'>
-				<form action="" class='R ability-levels'>
-					<input name='Rability' class='ability-rank' type='radio' value=1> 
-					<input name='Rability' class='ability-rank' type='radio' value=2>
-					<input name='Rability' class='ability-rank' type='radio' value=3>
-					<input name='Rability' class='ability-rank' type='radio' value=4>
-					<input name='Rability' class='ability-rank' type='radio' value=5>
-				</form>
-			</div>
-		</div>
+	<div class='item-div'><!-- placehoolder -->
+		
 	</div>
 	<div class='main-container'>
 		<div class='main-image-div'>
@@ -84,7 +44,59 @@
 			<input type="button" id='auto-attack' value='AUTO!'></input>
 			<input type="text" id='attack-damage' value=60></input>
 		</div>
+		<div class='selected-champion-div'><!-- placehoolder -->
+			<img class='selected-champion' src=''>
+			<div class='level-slider-div'>
+				<div id='level-slider'></div>
+			</div>
+			<span id='level-span'><strong>Level 1</strong></span>
+		</div>
+		<div class='abilties'>
+			<div class='ability-slot'>
+				<img class='Q ability' src=''>
+				<form action="" class='Q ability-levels'>
+					<input name='Qability' class='ability-rank' type='radio' value=1> 
+					<input name='Qability' class='ability-rank' type='radio' value=2>
+					<input name='Qability' class='ability-rank' type='radio' value=3>
+					<input name='Qability' class='ability-rank' type='radio' value=4>
+					<input name='Qability' class='ability-rank' type='radio' value=5>
+				</form>
+				<div class='description-text' id='Q'></div>
+			</div>
+			<div class='ability-slot'>
+				<img class='W ability' src=''>
+				<form action="" class='W ability-levels'>
+					<input name='Wability' class='ability-rank' type='radio' value=1> 
+					<input name='Wability' class='ability-rank' type='radio' value=2>
+					<input name='Wability' class='ability-rank' type='radio' value=3>
+					<input name='Wability' class='ability-rank' type='radio' value=4>
+					<input name='Wability' class='ability-rank' type='radio' value=5>
+				</form>
+				<div class='description-text' id='W'></div>
+			</div>
+			<div class='ability-slot'>
+				<img class='E ability' src=''>
+				<form action="" class='E ability-levels'>
+					<input name='Eability' class='ability-rank' type='radio' value=1> 
+					<input name='Eability' class='ability-rank' type='radio' value=2>
+					<input name='Eability' class='ability-rank' type='radio' value=3>
+					<input name='Eability' class='ability-rank' type='radio' value=4>
+					<input name='Eability' class='ability-rank' type='radio' value=5>
+				</form>
+				<div class='description-text' id='E'></div>
+			</div>
+			<div class='ability-slot'>
+				<img class='R ability' src=''>
+				<form action="" class='R ability-levels'>
+					<input name='Rability' class='ability-rank' type='radio' value=1> 
+					<input name='Rability' class='ability-rank' type='radio' value=2>
+					<input name='Rability' class='ability-rank' type='radio' value=3>
+				</form>
+				<div class='description-text' id='R'></div>
+			</div>
+		</div>
 	</div>
+
 	<div class="champion-div">
 		<input list="champion-data-list" placeholder=' Search Champions' class="champion-search">
 		<datalist id="champion-data-list"></datalist>

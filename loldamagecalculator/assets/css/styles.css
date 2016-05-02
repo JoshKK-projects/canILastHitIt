@@ -10,12 +10,14 @@
 	height: 25px;
 	margin-bottom: 5px;
 }
-.abilties{
-	margin-left: 50%;
-}
 .ability{
-	margin-left: 17%;
 	margin-top: 15px;
+	float: left;
+	margin-left: 15%;
+}
+.ability-slot{
+	float: left;
+	width: 20%;
 }
 .timeslider-div{
 	margin-top: 10px;
@@ -32,12 +34,12 @@
     background: #ffffff 50% 50% repeat-x;
     border-radius: 15px;
     width: 50%;
-    margin-left: 50%;
+    margin-left: 14%;
     padding-right: 8px;
     padding-left: 1px;
 }
 #level-span{
-	margin-left: 50%;
+	margin-left: 18	%;
 }
 #level-slider .ui-slider-handle.ui-state-default.ui-corner-all{
 	height: .3em;
@@ -51,16 +53,17 @@
 	float: left;		
 	width: 20%;
 }
-.selected-champion{
-	margin-left: 50%;
-	margin-top: 15%;
+.item-div{
+	float: left;	
+	width: 20%;
+	height: 1px;
 }
 .champion-div{
 	float: left;
 	height: 100%;
 	width: 20%;
 	overflow-y:auto;
-	height: 400px;
+	height: 475px;
 	cursor: pointer;
 }
 .hp-div{
@@ -100,6 +103,10 @@
 }
 #auto-attack{
 	width: 100%;
+}
+.ability-levels{
+	float: left;
+
 }
 #timeslider.ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all{
 	height: .4em;
