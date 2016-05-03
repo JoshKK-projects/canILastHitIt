@@ -1,6 +1,10 @@
 (function($){
 	var all_champions = [];
 	var current_champ;
+	var current_Q;
+	var current_W;
+	var current_E;
+	var current_R;
 	var level = 1;
 
 	
