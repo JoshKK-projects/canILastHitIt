@@ -28,12 +28,13 @@
 		to_show = '#' + to_show;
 		$(to_show).show();
 	},
-	function(){
-		var ability = this.className.split(' ')[0];
-		var to_show = document.getElementById(ability).id;
-		to_show = '#' + to_show;
-		$(to_show).hide();
-	});
+		function(){
+			var ability = this.className.split(' ')[0];
+			var to_show = document.getElementById(ability).id;
+			to_show = '#' + to_show;
+			$(to_show).hide();
+		}
+	);
 
 	function get_all_champs(){
 		jQuery.ajax({
@@ -62,7 +63,7 @@
 			dataType: 'json',
 			url: 'http://ddragon.leagueoflegends.com/cdn/6.8.1/data/en_US/champion/'+champion+'.json',
 			success: function(champ){
-				populate_icons(champion);
+				populate_champion_icons(champion);
 				populate_champion_search(champion);
 				fill_all_champions(champion,champ.data[champion]);
 
@@ -90,10 +91,9 @@
 	$('.champion-search').on('keyup',function(){
 		var search = $('.champion-search').val();
 		console.log(search);
-		$('.champion-div').children().each(function(){
-			var the_class = $(this).context.className; //champ-icon
+		$('.champion-icon-div').children().each(function(){
 			var the_id = $(this).context.id; //Name-image
-			if(the_class == 'champ-icon' && !the_id.split('-')[0].includes(search)){
+			if(!the_id.split('-')[0].includes(search)){
 				$(this).hide();
 			}
 			else{
@@ -103,11 +103,11 @@
 	});	
 
 
-	function populate_icons(champ){
+	function populate_champion_icons(champ){
 		var image = 'http://ddragon.leagueoflegends.com/cdn/6.8.1/img/champion/'+champ+'.png'
-		$('.champion-div').append("<img id='"+champ+"-image' class='champ-icon' src='"+image+"'>");
+		$('.champion-icon-div').append("<img id='"+champ+"-image' class='champ-icon' src='"+image+"'>");
 	}
-	$('.champion-div').on('click', '.champ-icon', function(e){
+	$('.champion-icon-div').on('click', '.champ-icon', function(e){
 		current_champ = all_champions[e.target.id.split('-')[0]];
 		console.log(current_champ);
 		asign_champs(current_champ);
@@ -129,6 +129,13 @@
 		desc_replacer(current_champ,W,1,0,'#W');
 		desc_replacer(current_champ,E,2,0,'#E');
 		desc_replacer(current_champ,R,3,0,'#R');
+		ability_gather(current_champ);
+	}
+
+	function ability_gather(current_champ){
+		for(var spell in current_champ.spells){
+			var spell = current_champ.spells[spell];
+		}
 	}
 
 	function desc_replacer(champ,stat_desc,spell,spelllevel,qwer){

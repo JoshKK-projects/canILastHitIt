@@ -15,8 +15,24 @@
 </head>
 
 <body>
-	<div class='item-div'><!-- placehoolder -->
-		
+	<div class='main-item-container'>
+		<div class='item-div'>
+			<input list="item-data-list" placeholder=' Search Items' class="item-search searcher">
+			<datalist id="item-data-list"></datalist>
+			<br/>
+			<div class='item-icon-div'>
+			</div>
+		</div>
+		<div class='equipped-items'>
+			<img class='equipped' src='' id='slot-1'>
+			<img class='equipped' src='' id='slot-2'>
+			<img class='equipped' src='' id='slot-3'>
+			<br/>
+			<img class='equipped' src='' id='slot-4'>
+			<img class='equipped' src='' id='slot-5'>
+			<img class='equipped' src='' id='slot-6'>
+
+		</div>
 	</div>
 	<div class='main-container'>
 		<div class='main-image-div'>
@@ -98,14 +114,17 @@
 	</div>
 
 	<div class="champion-div">
-		<input list="champion-data-list" placeholder=' Search Champions' class="champion-search">
+		<input list="champion-data-list" placeholder=' Search Champions' class="champion-search searcher">
 		<datalist id="champion-data-list"></datalist>
+		<div class="champion-icon-div">
+		</div>
 	<br/>
 		<!-- js filled -->
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
   	<script src='loldamagecalculator/assets/js/creepmanager.js'></script>
+	<script src='loldamagecalculator/assets/js/itemdata.js'></script>
     <script src='loldamagecalculator/assets/js/championdata.js'></script>
 </body>
 </html>
