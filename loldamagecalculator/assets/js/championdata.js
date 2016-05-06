@@ -16,7 +16,8 @@
 		slide: function(event,ui){
 			level = ui.value;
 			$('#level-span').html('Level ' +level);
-			$('#attack-damage').val(Math.floor(current_champ.stats.attackdamage + get_level_ad(current_champ)));
+			calc_stats();
+			$('#attack-damage').val(Math.floor(current_champ.stats.attackdamage + get_level_ad(current_champ)+bonus_ad));
 		}
 	});
 

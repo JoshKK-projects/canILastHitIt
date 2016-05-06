@@ -10,6 +10,11 @@
 	height: 25px;
 	margin-bottom: 5px;
 }
+.creep-selector{
+	float: left;
+	width: 40px;
+	margin-top: 22%;
+}
 .ability{
 	margin-top: 15px;
 	float: left;
@@ -51,10 +56,19 @@
 }
 .main-image-div{
 	padding-top: 35px;
+	float: left;
+	margin-left: 25%
 }
 .selected-champion-div{
 	float: left;		
 	width: 20%;
+}
+.pick-creeps{
+	float: left;
+	height: 40px;
+	width: 40px;
+	margin: 8px;
+	cursor: pointer;
 }
 .equipped{
 	height: 55px;
@@ -64,6 +78,14 @@
 	float: left;
 	margin: 5px;
 	border-radius: 5px;
+	position: relative;
+}
+.remove{
+	position: absolute;
+	left: 60%;
+	top: 69%;
+	color: red;
+	opacity: .5;
 }
 .item-div{
 	height: 415px;
@@ -100,7 +122,6 @@
 }
 .hp-num-div{
 	margin: 0 auto;
-	width: 50%;
 }
 .hp-num-span{
 	margin-left: 25%;
@@ -109,9 +130,7 @@
 	margin: 0 auto;
 	width: 100%;
 }
-#percents{
-	margin-left: 30%;
-}
+
 .main-image-hp{
 	width: 300px;
 	background-color: green;

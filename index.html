@@ -24,13 +24,25 @@
 			</div>
 		</div>
 		<div class='equipped-items'>
-			<img class='equipped' src='' id='slot-1'>
-			<img class='equipped' src='' id='slot-2'>
-			<img class='equipped' src='' id='slot-3'>
+			<div class='equipped' id='slot-1'>
+				<input type='button' value='X' id='remove-1' class='remove'>
+			</div>
+			<div class='equipped' src='' id='slot-2'>
+				<input type='button' value='X' id='remove-2' class='remove'>
+			</div>
+			<div class='equipped' src='' id='slot-3'>
+				<input type='button' value='X' id='remove-3' class='remove'>
+			</div>
 			<br/>
-			<img class='equipped' src='' id='slot-4'>
-			<img class='equipped' src='' id='slot-5'>
-			<img class='equipped' src='' id='slot-6'>
+			<div class='equipped' src='' id='slot-4'>
+				<input type='button' value='X' id='remove-4' class='remove'>
+			</div>
+			<div class='equipped' src='' id='slot-5'>
+				<input type='button' value='X' id='remove-5' class='remove'>
+			</div>
+			<div class='equipped' src='' id='slot-6'>
+				<input type='button' value='X' id='remove-6' class='remove'>
+			</div>
 
 		</div>
 	</div>
@@ -47,6 +59,11 @@
 			</div>
 			<div class='main-image' style="background:url('loldamagecalculator/assets/images/siegecreep.jpg')"></div>
 		</div>
+		<div class='creep-selector'>
+			<img class='pick-creeps' id='siege' src='loldamagecalculator/assets/images/siegecreep.jpg'/>
+			<img class='pick-creeps' id='melee' src='loldamagecalculator/assets/images/meleecreep.jpeg'/>
+			<img class='pick-creeps' id='caster' src='loldamagecalculator/assets/images/castercreep.jpeg'/>
+		</div>
 		<div class='reset-hp-div'>
 			<input type="button" id="reset-hp" value='Reset hp'></input>
 		</div>
@@ -54,7 +71,7 @@
 			<div id='timeslider'></div>
 		</div>	
 		<div class='time-div'>
-			<span id='time-span'><strong>1:15</strong></span>
+			<span id='time-span'><strong>1:30</strong></span>
 		</div>
 		<div class='auto-attack-div'>
 			<input type="button" id='auto-attack' value='AUTO!'></input>
